@@ -1,0 +1,26 @@
+.hero img {
+  width: 100%;
+}
+
+.objectives {
+  justify-content: space-around;
+  text-align: center;
+  margin: 30px auto;
+}
+.objectives > * {
+  color: white;
+  border-radius: 15px;
+}
+.objectives > * h1 {
+  margin-bottom: 20px;
+}
+.objectives .bg-orange {
+  background-color: #ff5810;
+}
+
+.services img {
+  border-radius: 30px 30px 0 0;
+}
+.services > * {
+  margin-bottom: 30px;
+}/*# sourceMappingURL=home.css.map */
