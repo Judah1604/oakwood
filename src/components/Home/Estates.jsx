@@ -1,7 +1,4 @@
-import { useState } from "react";
-
 function Estates() {
-	const [isActive, setIsActive] = useState(false);
 
 	return (
 		<>
@@ -45,80 +42,7 @@ function Estates() {
 						</div>
 					</div>
 					<div
-						className={
-							isActive
-								? "visible others row"
-								: "hidden others row"
-						}
-					>
-						<div className="col-md-3">
-							<img
-								src="/public/estates/silicon-oasis.jpeg"
-								alt="Silicon Oasis"
-								className="img-fluid"
-							/>
-							<h3>Silicon Oasis</h3>
-						</div>
-						<div className="col-md-3">
-							<img
-								src="/public/estates/green-island.jpeg"
-								alt="Green Island"
-								className="img-fluid"
-							/>
-							<h3>Green Island</h3>
-						</div>
-						<div className="col-md-3">
-							<img
-								src="/public/estates/gardens2.jpeg"
-								alt="Oakwood Gardens Phase 2"
-								className="img-fluid"
-							/>
-							<h3>Oakwood Gardens Phase 2</h3>
-						</div>
-						<div className="col-md-3">
-							<img
-								src="/public/estates/midsprings-park.jpeg"
-								alt="Misprings Park"
-								className="img-fluid"
-							/>
-							<h3>Misprings Park</h3>
-						</div>
-						<div className="col-md-3">
-							<img
-								src="/public/estates/midsprings-court.jpeg"
-								alt="Misprings Court"
-								className="img-fluid"
-							/>
-							<h3>Misprings Court</h3>
-						</div>
-						<div className="col-md-3">
-							<img
-								src="/public/estates/skyfall.jpeg"
-								alt="Skyfall By Oakwood"
-								className="img-fluid"
-							/>
-							<h3>Skyfall By Oakwood</h3>
-						</div>
-						<div className="col-md-3">
-							<img
-								src="/public/estates/umbrella.jpeg"
-								alt="Umbrella City"
-								className="img-fluid"
-							/>
-							<h3>Umbrella City</h3>
-						</div>
-						<div className="col-md-3">
-							<img
-								src="/public/estates/cascade.jpeg"
-								alt="Cascade Voyage Phase 2"
-								className="img-fluid"
-							/>
-							<h3>Cascade Voyage Phase 2</h3>
-						</div>
-					</div>
-					<div
-						className={isActive ? "toggle up mb-3" : "toggle mb-3"}
-						onClick={() => setIsActive(!isActive)}
+						className="toggle mb-3"
 					>
 						<h2>
 							<span>
