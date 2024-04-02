@@ -5,6 +5,7 @@ const Objectives = () => {
 		<>
 			<div className="objectives container-fluid row">
 				<div className="col-md-3 bg-dark p-5">
+					<i class="fa-solid fa-bullseye"></i>
 					<h1>Our Mission</h1>
 					<p>
 						To simplify, and modernize through the use of Artificial
@@ -13,6 +14,7 @@ const Objectives = () => {
 					</p>
 				</div>
 				<div className="col-md-3 bg-orange p-5">
+					<i class="fa-solid fa-chart-line"></i>
 					<h1>Our Vision</h1>
 					<p>
 						Thrive to be the best Real Estate Broker, providing
@@ -22,6 +24,7 @@ const Objectives = () => {
 					</p>
 				</div>
 				<div className="col-md-3 bg-dark p-5">
+					<i class="fa-solid fa-coins"></i>
 					<h1>Our Values</h1>
 					<p>
 						A culture of respect, integrity, humility, service,

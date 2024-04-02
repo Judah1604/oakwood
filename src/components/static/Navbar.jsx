@@ -2,7 +2,7 @@ import './styles/static.css';
 
 function Navbar() {
 	return (
-		<div className="navbar navbar-expand-lg p-3 bg-dark">
+		<div className="navbar navbar-expand-lg p-3 bg-dark" id="navbar">
 			<div className="container-fluid">
 				<a href="/" className="navbar-brand">
 					<img src="/public/Logo.png" alt="Oakwood Group" className="logo" />
