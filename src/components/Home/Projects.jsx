@@ -1,36 +1,48 @@
-import React from 'react'
+import React from "react";
 
 function Projects() {
-  return (
+	return (
 		<div className="projects container">
-			<h1 className="mt-3 text-center">
+			<h1 className="my-3 text-center">
 				Our <span>Projects</span>
 			</h1>
-			<p>Check these links out</p>
-			<ul>
-				<li>
-					<a href="https://www.youtube.com/watch?v=R62P2m6XLBo">
-						https://www.youtube.com/watch?v=R62P2m6XLBo
-					</a>
-				</li>
-				<li>
-					<a href="https://www.youtube.com/watch?v=Y-cYneZXS20">
-						https://www.youtube.com/watch?v=Y-cYneZXS20
-					</a>
-				</li>
-				<li>
-					<a href="https://www.youtube.com/watch?v=hmMwhFawhIU">
-						https://www.youtube.com/watch?v=hmMwhFawhIU
-					</a>
-				</li>
-				<li>
-					<a href="https://www.youtube.com/watch?v=z0vGP8qIEyg">
-						https://www.youtube.com/watch?v=z0vGP8qIEyg
-					</a>
-				</li>
-			</ul>
+			<div className="videos row">
+				<iframe
+					width="726"
+					height="408"
+					className="col-md-6"
+					src="https://www.youtube.com/embed/R62P2m6XLBo"
+					title="Oakwood Gardens Phase II"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
+					allowfullscreen
+				></iframe>
+				<iframe
+					width="726"
+					height="408"
+					className="col-md-6"
+					src="https://www.youtube.com/embed/43PHPKfnPbY"
+					title="OAKWOOD GARDENS PHASE 2"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
+					allowfullscreen
+				></iframe>
+				<iframe
+					width="726"
+					height="408"
+					className="col-md-6"
+					src="https://www.youtube.com/embed/z0vGP8qIEyg"
+					title="SKYFALL BY  OAKWOOD"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
+					allowfullscreen
+				></iframe>
+			</div>
 		</div>
-  );
+	);
 }
 
-export default Projects
+export default Projects;

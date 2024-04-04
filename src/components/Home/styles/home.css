@@ -66,4 +66,8 @@
 }
 .estates .up i {
   transform: rotate(180deg);
+}
+
+.projects .videos iframe {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=home.css.map */

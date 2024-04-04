@@ -1,5 +1,4 @@
 function Estates() {
-
 	return (
 		<>
 			<div className="container-fluid">
@@ -41,9 +40,7 @@ function Estates() {
 							<h3>Oakwood Gardens</h3>
 						</div>
 					</div>
-					<div
-						className="toggle mb-3"
-					>
+					<div className="toggle mb-3">
 						<h2>
 							<span>
 								<i className="fa-solid fa-angles-down"></i>
