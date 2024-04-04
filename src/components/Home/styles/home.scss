@@ -57,25 +57,10 @@
 
     }
 
-    .others {
-        transition: 0.4s ease;
-    }
-
-    .hidden {
-        display: none;
-    }
-
-    .visible {
-        display: flex;
-    }
-
-
-    .default,
-    .hidden,
-    .visible {
-        &>* {
-            margin-top: 20px;
-        }
+    button span {
+        width: 5rem;
+        height: 5rem;
+        filter: brightness(0.2);
     }
 
     .toggle {
@@ -92,6 +77,12 @@
         i {
             transform: rotate(180deg);
         }
+    }
+}
+
+.inspect {
+    h1 {
+        font-size: 3em;
     }
 }
 

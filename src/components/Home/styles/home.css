@@ -42,19 +42,10 @@
 .estates > * img {
   margin-bottom: 25px;
 }
-.estates .others {
-  transition: 0.4s ease;
-}
-.estates .hidden {
-  display: none;
-}
-.estates .visible {
-  display: flex;
-}
-.estates .default > *,
-.estates .hidden > *,
-.estates .visible > * {
-  margin-top: 20px;
+.estates button span {
+  width: 5rem;
+  height: 5rem;
+  filter: brightness(0.2);
 }
 .estates .toggle {
   margin-top: 40px;
@@ -66,6 +57,10 @@
 }
 .estates .up i {
   transform: rotate(180deg);
+}
+
+.inspect h1 {
+  font-size: 3em;
 }
 
 .projects .videos iframe {
