@@ -169,10 +169,13 @@ function Estates() {
 					/>
 					<div className="text col-md-5 text-center">
 						<h1>Why Wait? Join Us And Achieve Something Great</h1>
-						<button className="btn btn-orange icon-left mt-4">
+						<a
+							href="/book-an-inspection"
+							className="btn btn-orange icon-left"
+						>
 							<i className="fa-solid fa-binoculars"></i>
 							Book an Inspection
-						</button>
+						</a>
 					</div>
 				</div>
 			</div>

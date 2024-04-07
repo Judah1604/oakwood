@@ -1,8 +1,10 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "./components/Home/Home";
-import Footer from "./components/static/Footer";
+import Estates from "./components/Estates/Estates";
 import Navbar from "./components/static/Navbar";
+import Footer from "./components/static/Footer";
 import "./styles/base/common.css";
+import BookInspection from "./components/BookInspection/BookInspection";
 
 function App() {
 	return (
@@ -11,6 +13,8 @@ function App() {
 			<Navbar />
 				<Routes>
                     <Route path="/" Component={Home} />
+                    <Route path="/estates" Component={Estates} />
+                    <Route path="/book-an-inspection" Component={BookInspection} />
                 </Routes>
 			<Footer />
 			</Router>

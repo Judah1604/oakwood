@@ -63,10 +63,10 @@ function Navbar() {
 					>
 						Contact
 					</a>
-					<button className="btn btn-orange icon-left">
+					<a href="/book-an-inspection" className="btn btn-orange icon-left">
 						<i className="fa-solid fa-binoculars"></i>
 						Book an Inspection
-					</button>
+					</a>
 				</div>
 			</div>
 		</div>

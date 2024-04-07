@@ -1,0 +1,18 @@
+.bookInspection {
+    margin: 30px auto;
+    justify-content: center;
+
+    input,
+    textarea {
+        padding: 0.6em 1.2em;
+        width: 100%;
+    }
+
+    textarea {
+        height: 180px;
+    }
+
+    .submitBtn {
+        text-align: right;
+    }
+}
