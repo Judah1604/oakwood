@@ -1,3 +1,5 @@
+import DatePicker from "react-datetime";
+import "react-datetime/css/react-datetime.css";
 import "./styles/styles.css";
 
 function BookInspection() {
@@ -23,6 +25,11 @@ function BookInspection() {
 		"THE MALDIVES – Behind Shoprite ",
 		"THE ICONIC -Okun Ajah, Ogombo",
 	];
+
+	const disOtherDays = (current) => {
+		return current.day() == 2 || current.day() == 4;
+	};
+
 	return (
 		<div className="bookInspection container row">
 			<div className="col-md-5">
@@ -82,24 +89,17 @@ function BookInspection() {
 							required
 						>
 							{listOfEstates.map((item, index) => (
-                                <option key={index} value={item}>{item}</option>
-                            ))}
+								<option key={index} value={item}>
+									{item}
+								</option>
+							))}
 						</select>
 					</div>
 					<div className="mb-3">
 						<label for="date" className="form-label">
 							Date
 						</label>
-						<select
-							name="date"
-							id="date"
-							className="form-control"
-							required
-						>
-							<option value=""></option>
-							<option value="Tuesday">Tuesday</option>
-							<option value="Thursday">Thursday</option>
-						</select>
+                        <DatePicker timeFormat={false} isValidDate={disOtherDays} />
 					</div>
 					<div className="mb-3">
 						<label for="message" className="form-label">
