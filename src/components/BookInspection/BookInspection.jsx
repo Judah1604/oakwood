@@ -27,96 +27,104 @@ function BookInspection() {
 	];
 
 	const disOtherDays = (current) => {
-		return current.day() == 2 || current.day() == 4;
+		return current.day() == 2 || current.day() == 4 || current.day() == 5;
 	};
 
 	return (
-		<div className="bookInspection container row">
-			<div className="col-md-5">
-				<img
-					src="/inspect.jpeg"
-					alt="Book an Inspection"
-					className="rounded img-fluid"
-				/>
+		<>
+            <div className="underlay">
+                <img src="/underlay.jpg" alt="Underlay" />
+                <h1>Schedule an Inspection</h1>
+            </div>
+			<div className="bookInspection container row">
+				<div className="col-md-5">
+					<img
+						src="/inspect.jpeg"
+						alt="Book an Inspection"
+						className="rounded img-fluid"
+					/>
+				</div>
+				<div className="col-md-6 text">
+					<form action="#" className="mt-5 mx-4">
+						<div className="mb-3">
+							<label for="name" className="form-label">
+								Name
+							</label>
+							<input
+								type="text"
+								className="form-control"
+								id="name"
+								name="name"
+								required
+							/>
+						</div>
+						<div className="mb-3">
+							<label for="email" className="form-label">
+								Email address
+							</label>
+							<input
+								type="email"
+								className="form-control"
+								id="email"
+								name="email"
+								required
+							/>
+						</div>
+						<div className="mb-3">
+							<label for="phone" className="form-label">
+								Phone Number
+							</label>
+							<input
+								type="number"
+								className="form-control"
+								id="phone"
+								name="phone"
+								required
+							/>
+						</div>
+						<div className="mb-3">
+							<label for="property" className="form-label">
+								Property
+							</label>
+							<select
+								name="property"
+								id="property"
+								className="form-control"
+								required
+							>
+								{listOfEstates.map((item, index) => (
+									<option key={index} value={item}>
+										{item}
+									</option>
+								))}
+							</select>
+						</div>
+						<div className="mb-3">
+							<label for="date" className="form-label">
+								Date
+							</label>
+							<DatePicker
+								timeFormat={false}
+								isValidDate={disOtherDays}
+							/>
+						</div>
+						<div className="mb-3">
+							<label for="message" className="form-label">
+								Message
+							</label>
+							<textarea
+								name="message"
+								id="message"
+								className="form-control"
+							></textarea>
+						</div>
+						<div className="submitBtn">
+							<button className="btn btn-orange">Submit</button>
+						</div>
+					</form>
+				</div>
 			</div>
-			<div className="col-md-6 text">
-				<h1 className="text-center">Book an Inspection</h1>
-				<form action="#" className="mt-5 mx-4">
-					<div className="mb-3">
-						<label for="name" className="form-label">
-							Name
-						</label>
-						<input
-							type="text"
-							className="form-control"
-							id="name"
-							name="name"
-							required
-						/>
-					</div>
-					<div className="mb-3">
-						<label for="email" className="form-label">
-							Email address
-						</label>
-						<input
-							type="email"
-							className="form-control"
-							id="email"
-							name="email"
-							required
-						/>
-					</div>
-					<div className="mb-3">
-						<label for="phone" className="form-label">
-							Phone Number
-						</label>
-						<input
-							type="number"
-							className="form-control"
-							id="phone"
-							name="phone"
-							required
-						/>
-					</div>
-					<div className="mb-3">
-						<label for="property" className="form-label">
-							Property
-						</label>
-						<select
-							name="property"
-							id="property"
-							className="form-control"
-							required
-						>
-							{listOfEstates.map((item, index) => (
-								<option key={index} value={item}>
-									{item}
-								</option>
-							))}
-						</select>
-					</div>
-					<div className="mb-3">
-						<label for="date" className="form-label">
-							Date
-						</label>
-                        <DatePicker timeFormat={false} isValidDate={disOtherDays} />
-					</div>
-					<div className="mb-3">
-						<label for="message" className="form-label">
-							Message
-						</label>
-						<textarea
-							name="message"
-							id="message"
-							className="form-control"
-						></textarea>
-					</div>
-					<div className="submitBtn">
-						<button className="btn btn-orange">Submit</button>
-					</div>
-				</form>
-			</div>
-		</div>
+		</>
 	);
 }
 

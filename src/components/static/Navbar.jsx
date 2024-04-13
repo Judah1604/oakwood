@@ -23,16 +23,46 @@ function Navbar() {
 					>
 						Home
 					</a>
-					<a
-						href="/about"
-						className={
-							pathname === "/about"
-								? "nav-link active"
-								: "nav-link"
-						}
-					>
-						About
-					</a>
+					<div className="nav-item dropdown">
+						<a
+							href="#"
+							className={
+								pathname.includes("/about")
+									? "nav-link active"
+									: "nav-link"
+							}
+							data-bs-toggle="dropdown"
+						>
+							About
+							<i class="fa-solid fa-chevron-down"></i>
+						</a>
+						<div className="dropdown-menu dropdown-menu-dark">
+							<div>
+								<a
+									href="/about"
+									className={
+										pathname === "/about"
+											? "nav-link active"
+											: "nav-link"
+									}
+								>
+									About us
+								</a>
+							</div>
+							<div>
+								<a
+									className={
+										pathname === "/about/meet-our-team"
+											? "nav-link active"
+											: "nav-link"
+									}
+									href="/meet-our-team"
+								>
+									Meet our team
+								</a>
+							</div>
+						</div>
+					</div>
 					<a
 						href="/services"
 						className={
@@ -63,7 +93,10 @@ function Navbar() {
 					>
 						Contact
 					</a>
-					<a href="/book-an-inspection" className="btn btn-orange icon-left">
+					<a
+						href="/book-an-inspection"
+						className="btn btn-orange icon-left"
+					>
 						<i className="fa-solid fa-binoculars"></i>
 						Book an Inspection
 					</a>
